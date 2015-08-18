@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Front End For Dummies",
+    "packageVersion": "0.0.1",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "sarahgoldman",
+    "githubRepository": "front-end-for-dummies"
+  }
+}
