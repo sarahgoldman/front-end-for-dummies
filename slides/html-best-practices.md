@@ -1,9 +1,16 @@
 # HTML Best Practices
 
-Always use lowercase tags. Make sure to close tags correctly, avoid mismatched closing tags (proper indentation will help). 
+* Always use lowercase tags
+* Avoid mismatched closing tags (proper indentation will help)
+* Avoid inline styles
+* Use a web inspector
 
 ```
 // Good:
+
+span {
+	color: red;
+}
 
 <p>
 	<span>Hello</span>
@@ -11,6 +18,6 @@ Always use lowercase tags. Make sure to close tags correctly, avoid mismatched c
 
 // Bad:
 
-<P><SPAN>Hello</P></SPAN>
+<P><SPAN style="color: red;">Hello</P></SPAN>
 
 ```
