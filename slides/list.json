@@ -2,14 +2,14 @@
     {
         "filename": "index.md",
         "attr": {
-            "data-background": "/img/main-bg.jpg",
+            "data-background": "img/main-bg.jpg",
             "has-dark-background": "true"
         }
     },
     {
         "filename": "what-is-front-end.md",
         "attr": {
-            "data-background": "/img/purple-bg.jpg",
+            "data-background": "img/purple-bg.jpg",
             "has-dark-background": "true"
         }
     },
@@ -22,7 +22,7 @@
     {
         "filename": "html.md",
         "attr": {
-            "data-background": "/img/purple-corner.jpg"
+            "data-background": "img/purple-corner.jpg"
         }
     },
     {
@@ -46,7 +46,7 @@
     {
         "filename": "css.md",
         "attr": {
-            "data-background": "/img/purple-corner.jpg"
+            "data-background": "img/purple-corner.jpg"
         }
     },
     {
@@ -76,7 +76,7 @@
     {
         "filename": "sass.md",
         "attr": {
-            "data-background": "/img/purple-corner.jpg"
+            "data-background": "img/purple-corner.jpg"
         }
     },
     {
@@ -100,21 +100,21 @@
     {
         "filename": "responsive.md",
         "attr": {
-            "data-background": "/img/purple-bg.jpg",
+            "data-background": "img/purple-bg.jpg",
             "has-dark-background": "true"
         }
     },
     {
         "filename": "tour.md",
         "attr": {
-            "data-background": "/img/pink-bg.jpg",
+            "data-background": "img/pink-bg.jpg",
             "has-dark-background": "true"
         }
     },
     {
         "filename": "end.md",
         "attr": {
-            "data-background": "/img/purple-corner.jpg"
+            "data-background": "img/purple-corner.jpg"
         }
     }
 ]
