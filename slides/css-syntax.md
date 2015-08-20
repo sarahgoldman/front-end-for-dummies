@@ -1,24 +1,48 @@
-# Syntax
+# Selectors
 
-```
+<table class="full-width">
+	<tr>
+		<th>CSS</th>
+		<th>HTML</th>
+	</tr>
+	<tr>
+		<td>
+			<pre><code>
 // Selector
-p { padding: 10px; }
+p { 
+	padding: 10px; 
+}
 
 // Class selector
-.thumbnail { background: red; }
+.example { 
+	background: orange;
+}
 
 // ID selector
-#main_nav { font-style: italic; }
+#intro { 
+	font-style: italic;
+}
 
 // Contextual selector
-p span { color: green; }
+p span { 
+	color: green; 
+}
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+<div id="intro">Hello <span>World</span></div>
+<div class="example">
+	<p>I'm a <span>padded</span> paragraph</p>
+</div>
+			</code></pre>
+		</td>
+	</tr>
+</table>
 
-// Attribute selector
-p[title] { font-weight: bold; }
-
-// Pseudo-classes
-a:visited { text-decoration: underline; }
-
-// Pseudo-elements 
-p:first-line { font-variant: small-caps; }
-```
+<div class="css-example">
+	<div id="intro">Hello <span>World</span></div>
+	<div class="example">
+		<p>I'm a <span>padded</span> paragraph</p>
+	</div>
+</div>
