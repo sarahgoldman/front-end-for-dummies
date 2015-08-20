@@ -268,3 +268,17 @@ body {
   padding-left: 34px; }
 .reveal li {
   margin: 10px 0; }
+.reveal h2 {
+  margin-bottom: 0px; }
+
+.full-width {
+  width: 100%; }
+
+.css-example p {
+  padding: 10px; }
+.css-example .example {
+  background: orange; }
+.css-example #intro {
+  font-style: italic; }
+.css-example p span {
+  color: green; }

@@ -57,4 +57,35 @@ section[has-dark-background=true] {
 		margin: 10px 0;
 	}
 
+	h2 {
+		margin-bottom: 0px;
+	}
+
+}
+
+.full-width {
+	width: 100%;
+}
+
+
+
+.css-example {
+	p { 
+		padding: 10px; 
+	}
+
+	// Class selector
+	.example { 
+		background: orange;
+	}
+
+	// ID selector
+	#intro { 
+		font-style: italic;
+	}
+
+	// Contextual selector
+	p span { 
+		color: green; 
+	}
 }
