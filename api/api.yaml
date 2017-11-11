@@ -1,0 +1,97 @@
+swagger: "3.0.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "Weether API"
+host: ""
+basePath: ""
+
+schemes:
+- "http"
+
+paths:
+  /conditions:
+    get:
+      summary: "Get weather options"
+      operationId: "getWeatherOptions"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/RefData"
+        500:
+          description: "Server error"
+          
+  /places:
+    get:
+      summary: "Get places based on weather condition and location"
+      operationId: "getPlaces"
+      produces:
+      - "application/json"
+      parameters:
+        - in: path
+          name: condition
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the weather condition to match
+        - in: path
+          name: lat
+          schema:
+            type: double
+          required: true
+          description: Latitude
+        - in: path
+          name: lon
+          schema:
+            type: double
+          required: true
+          description: Longitude
+      responses:
+        200:
+          description: "Success"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Place"
+        500:
+          description: "Server error"
+
+definitions:
+  RefData:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      code:
+        type: "string"
+
+  Place:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+      name:
+        type: "string"
+      country:
+        type: "string"
+      coord:
+        $ref: "#/definitions/Location"
+      temp:
+        type: "string"
+      condition:
+        type: "string"
+
+  Location:
+    type: "object"
+    properties:
+      lat:
+        type: "double"
+      lon:
+        type: "double"
